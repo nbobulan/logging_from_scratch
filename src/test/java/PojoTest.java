@@ -12,7 +12,7 @@ import java.io.IOException;public class PojoTest {
         ObjectMapper mapper = new ObjectMapper();
 
         Fields fields = new Fields();
-        fields.setAssignee("Marina");
+        fields.setAssignee("Nataliia");
         fields.setIssueType("Bug");
         fields.setProject("QAAUT-5");
         fields.setSummary("Issue summary from the Automation Test");
@@ -23,7 +23,7 @@ import java.io.IOException;public class PojoTest {
         try {
             jsonInString = mapper.writeValueAsString(issue);
             try {
-                mapper.writeValue(new File("/home/mmazur/IdeaProjects/logging_from_scratch/test.json"), issue);
+                mapper.writeValue(new File("/Users/nbobulan/Desktop/logging_from_scratch-master/test.json"), issue);
             } catch (IOException e) {
                 e.printStackTrace();
             }
