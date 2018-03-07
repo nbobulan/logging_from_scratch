@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="log4j">
+
+    <test name="log4j test">
+        <classes>
+            <class name="log4JTest"/>
+            <class name="PojoTest"/>
+        </classes>
+    </test>
+
+</suite>
